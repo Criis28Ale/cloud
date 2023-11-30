@@ -15,6 +15,10 @@ import { createRespuestaC, deleteResC, getResC_byCid, getResC_byPcor, updateResC
 const router = Router()
 
 //Rutas para tabla Perfil_E
+router.get("/", (req, res) => {
+    res.send('Hola Mundo');
+})
+
 router.get('/getPerfilE', getPerfilE)                   //Llamar a todos los Perfiles_E
 router.post('/createPE', createPerfilE)                             //Crear un Perfil_E
 router.get('/getPerfilE_by/:enom', getPerfilE_by)                   //Llamar a un Perfil_E en especifico
