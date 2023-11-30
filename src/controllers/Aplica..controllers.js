@@ -42,12 +42,12 @@ export const createAplica = async (req, res) => {
     try {
         const {enom, tit, pcor, aest, adesc, ana} = req.body
         const pool = await getConnection()
-        const chatCompletion = await openai.completions.create({
+        /*const chatCompletion = await openai.completions.create({
             model: 'text-davinci-003',
             prompt: 'Hazme el analisis psicologico de menos de 200 caracteres del siguientes texto: ' + adesc,
-            max_tokens: 250
+            max_tokens: 200
         });
-        let analisis = chatCompletion.choices[0].text
+        let analisis = chatCompletion.choices[0].text*/
         const result = await pool.request()
         .input("Enombre", sql.VarChar, enom)
         .input("Titulo", sql.VarChar, tit)
