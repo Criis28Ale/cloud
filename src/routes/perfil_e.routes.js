@@ -11,7 +11,6 @@ import { createClases, getClases_byCnom, getClases_byIdC, getClass } from "../co
 import { creaeteInfo, getInfo } from "../controllers/Informacion.controllers";
 import { createCuestionario, deleteCuestionario, getCuestionario_byCid } from "../controllers/Cuestionario.controllers";
 import { createRespuestaC, deleteResC, getResC_byCid, getResC_byPcor, updateResC } from "../controllers/RespondeC.controllers";
-import { checktoken } from "../../utils/middlewares.perfil_e";
 
 const router = Router()
 
