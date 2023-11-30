@@ -2,7 +2,7 @@ import express from 'express'
 import config from './config'
 const cors = require("cors");
 
-import perfil_eRoutes from './routes/perfil_e.routes'
+import perfil_eRoutes from './routes/perfil_e.routes.js'
 
 const app = express()
 
