@@ -1,10 +1,10 @@
 import sql from 'mssql'
 
 const dbsetting = {
-    user: 'AdminProyect',
-    password: 'root123@',
-    server: 'proyectoserverdata.database.windows.net',
-    database: 'ProyectoNube',
+    user: 'admin',
+    password: 'root123-',
+    server: 'database-2.cbklfbxzenuh.us-east-1.rds.amazonaws.com',
+    database: 'cloud',
     options: {
         encrypt: true,
         trustServerCertificate: true,
