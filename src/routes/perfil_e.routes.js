@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { createPerfilE, getPerfilE, getPerfilE_by, getPerfilE_byCor } from '../controllers/perfil_e.controllers'
-import { createPropuesta, deletePropuesta, getPropuesta, getPropuesta_byEnom, getPropuesta_byTit } from "../controllers/Propuestas.controllers";
-import { createFormularios, deleteFormularios, getFormulario_byTit } from "../controllers/Formularios.controllers";
-import { createPerfilP, getPerfilP_by, getPerfilP_byCor } from "../controllers/Perfil_P.controllers";
-import { createAplica, getA_byPcor, getAplica_byPcor, getAplica_byTit, pb, updateAplica } from "../controllers/Aplica..controllers";
-import { createRespuestaF, getResF_byPcor, getRespuestaF_byTit } from "../controllers/RepondeF.controllers";
-import { cerateCursos, deleteCurso, getCursos, getCursos_byCnom } from "../controllers/Curso.controllers";
-import { createAsigna, deleteAsigna, getAsigna_byC, getAsigna_byCnom, getAsigna_byPcor, updateAsigna } from "../controllers/Asigna.controllers";
-import { createClases, getClases_byCnom, getClases_byIdC, getClass } from "../controllers/Clases.controllers";
-import { creaeteInfo, getInfo } from "../controllers/Informacion.controllers";
-import { createCuestionario, deleteCuestionario, getCuestionario_byCid } from "../controllers/Cuestionario.controllers";
-import { createRespuestaC, deleteResC, getResC_byCid, getResC_byPcor, updateResC } from "../controllers/RespondeC.controllers";
+import { createPerfilE, getPerfilE, getPerfilE_by, getPerfilE_byCor } from '../controllers/perfil_e.controllers.js'
+import { createPropuesta, deletePropuesta, getPropuesta, getPropuesta_byEnom, getPropuesta_byTit } from "../controllers/Propuestas.controllers.js";
+import { createFormularios, deleteFormularios, getFormulario_byTit } from "../controllers/Formularios.controllers.js";
+import { createPerfilP, getPerfilP_by, getPerfilP_byCor } from "../controllers/Perfil_P.controllers.js";
+import { createAplica, getA_byPcor, getAplica_byPcor, getAplica_byTit, pb, updateAplica } from "../controllers/Aplica..controllers.js";
+import { createRespuestaF, getResF_byPcor, getRespuestaF_byTit } from "../controllers/RepondeF.controllers.js";
+import { cerateCursos, deleteCurso, getCursos, getCursos_byCnom } from "../controllers/Curso.controllers.js";
+import { createAsigna, deleteAsigna, getAsigna_byC, getAsigna_byCnom, getAsigna_byPcor, updateAsigna } from "../controllers/Asigna.controllers.js";
+import { createClases, getClases_byCnom, getClases_byIdC, getClass } from "../controllers/Clases.controllers.js";
+import { creaeteInfo, getInfo } from "../controllers/Informacion.controllers.js";
+import { createCuestionario, deleteCuestionario, getCuestionario_byCid } from "../controllers/Cuestionario.controllers.js";
+import { createRespuestaC, deleteResC, getResC_byCid, getResC_byPcor, updateResC } from "../controllers/RespondeC.controllers.js";
 
 const router = Router()
 
