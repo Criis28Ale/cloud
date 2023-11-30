@@ -3,7 +3,7 @@ import {getConnection, sql} from '../database/connection.js'
 const OpenAI = require('openai');
 
 const openai = new OpenAI({
-  apiKey: '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',
+  apiKey: 'sk-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',
   organization: 'org-NcQNmEKHQUYa1cfjwRwX1Epp'
 });
 
