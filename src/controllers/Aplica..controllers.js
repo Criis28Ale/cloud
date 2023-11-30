@@ -54,8 +54,8 @@ export const createAplica = async (req, res) => {
         .input("Pcorreo", sql.VarChar, pcor)
         .input("Aestado", sql.VarChar, aest)
         .input("Adescripcion", sql.VarChar, adesc)
-        .input("analisis", sql.VarChar, analisis)
-        .query('INSERT INTO Aplica VALUES (@Enombre, @Titulo, @Pcorreo, @Aestado, @Adescripcion, @analisis)')
+        //.input("analisis", sql.VarChar, analisis)
+        .query('INSERT INTO Aplica VALUES (@Enombre, @Titulo, @Pcorreo, @Aestado, @Adescripcion, hola)')
         result.output = 'Aplicaste correctamente a la Propuestas ' + tit
         res.json(result)
     } catch (error) {
