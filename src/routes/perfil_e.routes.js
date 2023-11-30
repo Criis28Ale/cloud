@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createPerfilE, getPerfilE, getPerfilE_by, getPerfilE_byCor } from '../controllers/perfil_e.controllers.js'
+import { createPerfilE, getPerfilE, getPerfilE_by, getPerfilE_byCor } from '../controllers/Perfil_E.controllers.js'
 import { createPropuesta, deletePropuesta, getPropuesta, getPropuesta_byEnom, getPropuesta_byTit } from "../controllers/Propuestas.controllers.js";
 import { createFormularios, deleteFormularios, getFormulario_byTit } from "../controllers/Formularios.controllers.js";
 import { createPerfilP, getPerfilP_by, getPerfilP_byCor } from "../controllers/Perfil_P.controllers.js";
