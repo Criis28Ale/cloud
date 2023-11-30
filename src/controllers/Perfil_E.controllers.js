@@ -1,4 +1,4 @@
-import {getConnection, sql} from '../database/connection'
+import {getConnection, sql} from '../database/connection.js'
 const jwt = require('jsonwebtoken')
 
 export const getPerfilE = async (req, res) => {

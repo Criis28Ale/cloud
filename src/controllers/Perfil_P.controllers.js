@@ -1,6 +1,4 @@
-import { token } from 'morgan'
-import {getConnection, sql} from '../database/connection'
-import bcrypt from 'bcryptjs'
+import {getConnection, sql} from '../database/connection.js'
 const jwt = require('jsonwebtoken')
 
 export const getPerfilP_by = async (req, res) => {

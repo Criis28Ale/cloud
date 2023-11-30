@@ -1,4 +1,4 @@
-import {getConnection, sql} from '../database/connection'
+import {getConnection, sql} from '../database/connection.js'
 
 export const getCursos = async (req, res) => {
     try {

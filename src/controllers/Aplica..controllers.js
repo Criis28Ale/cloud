@@ -1,6 +1,5 @@
 
-import {getConnection, sql} from '../database/connection'
-const fs = require("fs");
+import {getConnection, sql} from '../database/connection.js'
 const OpenAI = require('openai');
 
 const openai = new OpenAI({
