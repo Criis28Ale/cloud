@@ -2,11 +2,6 @@
 import {getConnection, sql} from '../database/connection.js'
 const OpenAI = require('openai');
 
-const openai = new OpenAI({
-  apiKey: 'sk-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',
-  organization: 'org-NcQNmEKHQUYa1cfjwRwX1Epp'
-});
-
 export const getAplica_byTit = async (req, res) => {
     try {
         const {enom, tit} = req.params
@@ -42,19 +37,13 @@ export const createAplica = async (req, res) => {
     try {
         const {enom, tit, pcor, aest, adesc, ana} = req.body
         const pool = await getConnection()
-        const chatCompletion = await openai.completions.create({
-            model: 'text-davinci-003',
-            prompt: 'Hazme el analisis psicologico de menos de 200 caracteres del siguientes texto: ' + adesc,
-            max_tokens: 200
-        });
-        let analisis = chatCompletion.choices[0].text
         const result = await pool.request()
         .input("Enombre", sql.VarChar, enom)
         .input("Titulo", sql.VarChar, tit)
         .input("Pcorreo", sql.VarChar, pcor)
         .input("Aestado", sql.VarChar, aest)
         .input("Adescripcion", sql.VarChar, adesc)
-        .input("analisis", sql.VarChar, analisis)
+        .input("analisis", sql.VarChar, ana)
         .query('INSERT INTO Aplica VALUES (@Enombre, @Titulo, @Pcorreo, @Aestado, @Adescripcion, @analisis)')
         result.output = 'Aplicaste correctamente a la Propuestas ' + tit
         res.json(result)
